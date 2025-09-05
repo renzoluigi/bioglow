@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+:root {
+    --main-light: #c365ea;
+    --main: #631f84;
+    --main-dark: #271a50;
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--main), var(--main-light));
+}
+
+#logo-header {
+    display: block;
+    margin: auto;
+
+    width: 50vw;
+    max-width: 400px;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1500px) 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+}
+
+section#presentation {
+    padding: 100px;
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+section#presentation > article#text-presentation {
+    padding: 0 30px;
+    display: grid;
+    /*border: 2px solid black;*/
+    grid-area: 1 / 1 / 2 / 2;
+
+    align-content: space-evenly;
+}
+
+article#text-presentation h1 {
+    color: var(--main);
+    font-size: 4em;
+    text-shadow: 1px 1px 1px var(--main-dark);
+}
+
+article#text-presentation p {
+    font-size: 2em;
+}
+
+article#text-presentation ul {
+    font-size: 2em;
+    list-style-position: inside;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+a#button-presentation {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    background-color: var(--main);
+    border: 2px solid rgba(255, 255, 255, 0.62);
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 10px;
+
+}
+
+a#button-presentation:hover {
+    background-color: var(--main-light);
+    border: 2px solid rgba(255, 255, 255, 0.62);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 5px black;
+    transition: transform .5s, border .5s, background-color .5s;
+}
+
+section#presentation > article#media-presentation {
+    padding: 10px;
+    /*border: 2px solid blue;*/
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+article#media-presentation > img#product-highlighted {
+    margin: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
