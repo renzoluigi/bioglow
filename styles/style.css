@@ -1214,7 +1214,7 @@ section#nutricional-section {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
 }
 
 .faq-icon {
