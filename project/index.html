@@ -1,35 +1,582 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img id="logo-header" src="images/logo.png" alt="Logo do produto BioGlow">
-    </header>
-    <main>
-        <section id="presentation">
-            <article id="text-presentation">
-                <h1>Desperte o brilho de seus cabelos, pele e unhas</h1>
-                <p>O segredo para cabelos mais fortes, pele mais radiantes e unhas resistentes, 100% natural.</p>
-                <ul>
-                    <li>Fórmula comprovada</li>
-                    <li>Produto natural</li>
-                    <li>Desenvolvido por especialistas</li>
-                </ul>
-                <a id="button-presentation" href="#" target="_blank">Quero minha transformação agora!</a>
-            </article>
-            <article id="media-presentation">
-                <img id="product-highlighted" src="images/produto_principall.png" alt="Foto chamativa do produto BioGlow">
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles/small.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <title>BioGlow</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="logo-header" src="images/logobranco.png" alt="Logo do produto BioGlow">
+        </header>
+        <main>
+            <section id="presentation">
+                <article id="text-presentation">
+                    <h1>Transforme seu estilo</h1>
+                    <p>Descubra nosso produto exclusivo que une elegância e atitude. Feito para quem quer brilhar em qualquer lugar.</p>
+                    <ul class="bullets-presentation">
+                        <li>Resultados visíveis em poucas semanas</li>
+                        <li>Fórmula avançada com ativos de alta performance</li>
+                        <li>Beleza de dentro para fora: pele, cabelo e unhas</li>
+                        <li>Qualidade premium com tecnologia de absorção</li>
+                    </ul>
+                    <a href="#offers" id="button-presentation">Comprar agora<span>➜</span></a>
+                    <div class="trust-seal" role="img" aria-label="Compra garantida, segura e protegida.">
+                        <img src="images/selos.svg" alt="">
+                    </div>
+                </article>
+
+                <article id="product-presentation">
+                    <img src="images/produto_principall.png" alt="Produto em destaque" id="product-highlighted">
+                </article>
+            </section>
+
+            <section class="acao-organismo">
+                <article class="acao-container">
+                    <h2>Como o BioGlow age no seu corpo</h2>
+                    <p>
+                        Resultados reais começam de dentro para fora, cada cápsula entrega nutrientes que
+                        estimulam processos naturais do organismo, promovendo beleza e vitalidade duradoura.
+                    </p>
+
+                    <div class="acao-grid">
+                        <div class="acao-card fade-up">
+                            <div class="acao-icon">
+                            <img src="images/gota.png" alt="Ícone Produção de Colágeno">
+                            </div>
+                            <h3>Produção de Colágeno</h3>
+                            <p>
+                                Colágeno, Vitamina C e Silício estimulam a síntese natural de colágeno,
+                                deixando a pele mais firme e elástica.
+                            </p>
+                    </div>
+
+                    <div class="acao-card fade-up">
+                        <div class="acao-icon">
+                            <img src="images/folha-forca.png" alt="Ícone Força e Crescimento">
+                        </div>
+                        <h3>Força e Crescimento</h3>
+                        <p>
+                            Biotina e Zinco fortalecem cabelos e unhas, estimulando o crescimento saudável
+                            e prevenindo a queda.
+                        </p>
+                    </div>
+
+                    <div class="acao-card fade-up">
+                        <div class="acao-icon">
+                            <img src="images/diamante.png" alt="Ícone Hidratação Profunda">
+                        </div>
+                        <h3>Hidratação Profunda</h3>
+                        <p>
+                            Ácido Hialurônico e Ômega 3 melhoram a elasticidade e a retenção de água,
+                            deixando pele e cabelos mais macios.
+                        </p>
+                    </div>
+
+                    <div class="acao-card fade-up">
+                        <div class="acao-icon">
+                            <img src="images/raio(2).png" alt="Ícone Ação Antioxidante">
+                        </div>
+                        <h3>Ação Antioxidante</h3>
+                        <p>
+                            Vitamina C e Astaxantina combatem os radicais livres, prevenindo o envelhecimento
+                            precoce da pele e dos fios.
+                        </p>
+                    </div>
+
+                    <div class="acao-card fade-up">
+                        <div class="acao-icon">
+                            <img src="images/escudo.png" alt="Ícone Suporte Imunológico">
+                        </div>
+                        <h3>Suporte Imunológico</h3>
+                        <p>
+                            A Vitamina A e o Zinco fortalecem o sistema imunológico e refletem diretamente
+                            na saúde da pele e do couro cabeludo.
+                        </p>
+                    </div>
+
+                    <div class="acao-card fade-up">
+                        <div class="acao-icon">
+                            <img src="images/estrela.png" alt="Ícone Vitalidade e Energia">
+                        </div>
+                        <h3>Vitalidade e Energia</h3>
+                        <p>
+                            A combinação completa de nutrientes apoia o metabolismo celular,
+                            promovendo mais disposição e aparência saudável.
+                        </p>
+                    </div>
+                </div>
             </article>
         </section>
+
+        <section id="formula">
+            <h1 id="main-title-formula">Desvende a magia por trás do BioGlow</h1>
+            <article id="ingredients">
+                <h3 id="ingredients-title">O que faz o BioGlow ser tão eficaz?</h3>
+                <div class="ingredient-box fade-up">
+                    <img src="images/biotina.png" alt="Ícone Biotina">
+                    <h3>Biotina</h3>
+                    <p>Fortalece cabelos, pele e unhas, ajudando no crescimento saudável.</p>
+                </div>
+
+                <div class="ingredient-box fade-up">
+                    <img src="images/silicio.png" alt="Ícone Silício">
+                    <h3>Silício</h3>
+                    <p>Mineral essencial para a firmeza da pele e fortalecimento dos fios.</p>
+                </div>
+
+                <div class="ingredient-box fade-up">
+                    <img src="images/omega3.png" alt="Ícone Ômega 3">
+                    <h3>Ômega 3</h3>
+                    <p>Contribui para a saúde celular e combate processos inflamatórios.</p>
+                </div>
+
+                <div class="ingredient-box fade-up">
+                    <img src="images/vitaminac.png" alt="Ícone Vitamina C">
+                    <h3>Vitamina C</h3>
+                    <p>Poderoso antioxidante que estimula a produção natural de colágeno.</p>
+                </div>
+            </article>
+            <article id="development">
+                <div id="development-media">
+                    <img src="images/produto-selo.webp" alt="Representação gráfica de moléculas">
+                </div>
+                <div id="development-text">
+                    <h2>Desenvolvimento de ponta para resultados reais</h2>
+                    <p>Nossa equipe de especialistas se dedica à pesquisa para desenvolver a fórmula exclusiva de BioGlow, combinando ciência e natureza para garantir a máxima eficácia e resultados duradouros.</p>
+                    <a href="#offers" class="development-button">Tecnologia de absorção otimizada</a>
+                </div>
+            </article>
+            <article id="bio-glow-unique">
+                <h2 id="unique-title">Por que BioGlow é único?</h2>
+                <div class="unique-feature-box fade-up">
+                    <img src="images/folha-natural.png" alt="Ícone de folha de carvalho">
+                    <p>Ingredientes <br> 100% Naturais</p>
+                </div>
+                <div class="unique-feature-box fade-up">
+                    <img src="images/selo.png" alt="Ícone de teste dermatológico">
+                    <p>Testado <br> Dermatologicamente</p>
+                </div>
+                <div class="unique-feature-box fade-up">
+                    <img src="images/vegano.png" alt="Ícone de folha de hera">
+                    <p>Produto Vegano <br> e Sustentável</p>
+                </div>
+            </article>
+            <a href="#nutricional-section" class="development-button" id="open-formula-image" data-image="images/rotulo.jpeg">CONHEÇA MAIS DETALHES DA FÓRMULA BIOGLOW!</a>
+        </section>
+
+        <section id="before-after">
+            <h2>Antes e Depois</h2>
+
+            <article class="before-after-slider">
+                <img src="images/antes-nat.jpeg" alt="Antes" class="before">
+                <img src="images/depois-nat.jpeg" alt="Depois" class="after">
+                <input type="range" min="0" max="100" value="50" id="slider-range">
+                <p class="slider-instruction">⬅️ Arraste para ver a diferença ➡️</p>
+            </article>
+
+            <article class="benefits">
+                <div class="benefit">
+                    <img src="images/cabelo.png" alt="Cabelo">
+                    <p>Cabelos mais fortes</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/pele-brilhosa.png" alt="Pele">
+                    <p>Pele firme e iluminada</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/unha-icon.png" alt="Unhas">
+                    <p>Unhas resistentes</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Depoimentos reais</h3>
+                <div class="swiper testimonials">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>"Meu cabelo nunca esteve tão forte e brilhante!"</p>
+                            <span>- Mariana, 28 anos</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>"Minhas unhas cresceram e não quebram mais. Recomendo!"</p>
+                            <span>- Júlia, 32 anos</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>"A pele ganhou firmeza e muito mais luminosidade."</p>
+                            <span>- Camila, 40 anos</span>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
+
+            <div class="cta-before-after">
+                <p>Quer conquistar esses resultados também?</p>
+                <a href="#offers" class="cta-button">Quero o meu agora</a>
+            </div>
+        </section>
+
+        <section id="nutricional-section">
+            <article class="nutricional-container">
+
+                <div class="nutricional-texto">
+                    <h2>Tabela Nutricional</h2>
+                    <p>
+                        Confira os principais nutrientes e valores do nosso produto.
+                        A fórmula foi desenvolvida para fornecer equilíbrio e máxima absorção.
+                    </p>
+                </div>
+
+                <div class="nutricional-imagem">
+                    <img src="images/tabele-nutricional.jpeg" alt="Tabela Nutricional do Produto">
+                </div>
+
+            </article>
+        </section>
+
+
+        <section id="community-section">
+            <div class="community-box">
+
+                <article class="community-text-header">
+                    <h2>Quem usa, ama e compartilha!</h2>
+                    <p>Veja os resultados que encantam!</p>
+                </article>
+
+                <article class="community-photos">
+                    <div class="photo-row">
+                        <img src="images/antes-depois.jpeg" alt="Usuária mostrando o brilho da pele">
+                        <img src="images/antes-depois(2).jpeg" alt="Usuária feliz com os resultados de BioGlow">
+                        <img src="images/antes-depois(3).png" alt="Usuária exibindo unhas fortes">
+                    </div>
+                </article>
+
+                <article class="community-video">
+                    <h3>Depoimentos em Vídeo</h3>
+                    <div class="video-grid">
+                        <div class="video-box">
+                            <div class="video-media">
+                                <video src="images/video-prova.webm" controls playsinline></video>
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Transformação do Cabelo</p>
+                                <p class="video-description">O vídeo mostra a jornada e o brilho dos fios após o uso de BioGlow.</p>
+                            </div>
+                        </div>
+                        <div class="video-box">
+                            <div class="video-media">
+                                <video src="images/video-result.mp4" controls playsinline></video>
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Pele renovada e unhas fortes</p>
+                                <p class="video-description">Descubra como uma pele saudável e uma unha resistente transformam a sua autoestima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="community-social">
+                    <h4>Faça parte da nossa comunidade!</h4>
+                    <p>Compartilhe sua própria experiência usando a hashtag #MeuBioGlow e apareça por aqui!</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="offers">
+
+            <h2>Escolha o seu kit e transforme a sua rotina!</h2>
+            <p class="offers-subtitle">
+                Aproveite os descontos exclusivos e leve mais saúde e bem-estar para o seu dia a dia.
+            </p>
+
+            <article class="offers-grid">
+
+                <div class="offer-card">
+                    <h3>1 Pote</h3>
+                    <p class="offer-desc">Tratamento para 1 mês</p>
+                    <img src="images/produto(1)(1).png" alt="Produto 1 pote">
+                    <p class="offer-price">R$ 127,00</p>
+                    <p class="offer-installments">ou 12x de R$ 13,55</p>
+                    <a class="btn-offer" href="https://entrega.logzz.com.br/pay/memyn668q/princi" target="_blank">QUERO EXPERIMENTAR!</a>
+                    <span class="offer-note">Frete grátis para todo Brasil</span>
+                </div>
+
+                <div class="offer-card destaque">
+                    <div class="offer-badge">MAIS ESCOLHIDO</div>
+                    <h3>2 Potes</h3>
+                    <p class="offer-desc">Tratamento para 2 meses</p>
+                    <img src="images/2produtos.png" alt="Produto 2 potes">
+                    <p class="offer-price">R$ 167,00</p>
+                    <p class="offer-installments">ou 12x de R$ 17,82</p>
+                    <a class="btn-offer" href="https://entrega.logzz.com.br/pay/memyn668q/bqlhu-2-frascos" target="_blank">QUERO RESULTADOS!</a>
+                    <span class="offer-note">Frete grátis para todo Brasil</span>
+                </div>
+
+                <div class="offer-card">
+                    <h3>4 Potes</h3>
+                    <p class="offer-desc">Tratamento para 4 meses</p>
+                    <img src="images/4produtos.png" alt="Produto 4 potes">
+                    <p class="offer-price">R$ 267,00</p>
+                    <p class="offer-installments">ou 12x de R$ 28,49</p>
+                    <a class="btn-offer" href="https://entrega.logzz.com.br/pay/memyn668q/rnyaj-exclusivo" target="_blank">QUERO TRANSFORMAR!</a>
+                    <span class="offer-note">Frete grátis para todo Brasil</span>
+                </div>
+
+                <div class="offer-card">
+                    <h3>6 Potes</h3>
+                    <p class="offer-desc">Ideal para economizar</p>
+                    <img src="images/6produtos.png" alt="Produto 6 potes">
+                    <p class="offer-price">R$ 327,00</p>
+                    <p class="offer-installments">ou 12x de R$ 34,90</p>
+                    <a class="btn-offer" href="https://entrega.logzz.com.br/pay/memyn668q/amrik-6-meses" target="_blank">QUERO O KIT COMPLETO!</a>
+                    <span class="offer-note">Frete grátis para todo Brasil</span>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contact-us">
+            <article class="contact-container">
+
+                <h2>Fale Conosco</h2>
+                <p class="contact-subtitle">
+                    Estamos aqui para te ajudar! Escolha a melhor forma de entrar em contato e tire todas as suas dúvidas sobre o BioGlow.
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <img src="images/whatsapp.svg" alt="Ícone do WhatsApp">
+                        <h3>Atendimento via WhatsApp</h3>
+                        <p>Nosso time está pronto para te ajudar a qualquer momento. Clique no botão e converse com um especialista!</p>
+                        <a href="https://wa.me/5511973244646" target="_blank" class="contact-button whatsapp">Enviar Mensagem</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <img src="images/email.svg" alt="Ícone de E-mail">
+                        <h3>Atendimento por e-mail</h3>
+                        <p>Prefere escrever? Envie sua mensagem para o nosso e-mail. Responderemos o mais rápido possível!</p>
+                        <a href="mailto:bioglowoficiall@gmail.com" class="contact-button email">Enviar E-mail</a>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <section id="faq">
+
+            <h2>Dúvidas Frequentes</h2>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Como devo tomar?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>2 cápsulas por dia, preferencialmente durante as refeições.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Em quanto tempo começo a ver resultados?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>A maioria das pessoas nota os primeiros resultados em 30 dias de uso contínuo.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>O BioGlow engorda?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Não! Ele não contém calorias nem ingredientes que causam ganho de peso.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Pode ser tomado com outros suplementos?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! O BioGlow é compatível com outros suplementos como multivitamínicos e colágeno.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Homens também podem tomar o BioGlow?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! Os ingredientes beneficiam homens e mulheres igualmente.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>É aprovado pela Anvisa?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! Todos os ingredientes seguem as normas da ANVISA.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Tem contraindicações?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>É um produto natural e seguro. Gestantes, lactantes ou pessoas com condições específicas devem consultar um médico.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>É vegano?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Não é totalmente vegano, pois contém colágeno bovino. Mas é livre de lactose, glúten e corantes artificiais.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+                    <span>Funciona mesmo para queda de cabelo?</span>
+                    <span class="faq-icon">▾</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! A fórmula auxilia no fortalecimento dos fios e reduz a queda.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                    <button class="faq-question">
+                        <span>Precisa de receita para comprar?</span>
+                        <span class="faq-icon">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! É um suplemento natural, não precisa de receita médica.</p>
+                    </div>
+            </article>
+        </section>
+
     </main>
+
     <footer>
+        <div class="footer-container">
+            <div class="footer-col-1">
+                <img src="images/logobranco.png" alt="Logo BioGlow" class="footer-logo">
+                <p>BioGlow, beleza que transforma de dentro para fora.</p>
+            </div>
+            <div class="footer-col-2">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#presentation">Página Inicial</a></li>
+                    <li><a href="#formula">Fórmula</a></li>
+                    <li><a href="#before-after">Resultados</a></li>
+                    <li><a href="#offers">Kits</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="#faq">Dúvidas Frequentes</a></li>
+                    <li><a href="#contact-us">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-payments">
+                    <h4>Formas de Pagamento</h4>
+                    <div class="payment-icons">
+                        <img src="images/pix.svg" alt="Pix">
+                        <img src="images/mastercard.svg" alt="Mastercard">
+                        <img src="images/visa.svg" alt="Visa">
+                        <img src="images/boleto.svg" alt="Boleto">
+                        <img src="images/elo.svg" alt="Elo">
+                        <img src="images/hipercard.svg" alt="Hipercard">
+                        <img src="images/americanexpress.svg" alt="American Express">
+                        <img src="images/diners.svg" alt="Diners Club">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BioGlow. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
 </body>
+
+    <script>
+        const slider = document.getElementById('slider-range');
+        const afterImg = document.querySelector('.before-after-slider .after');
+        slider.addEventListener('input', e => {
+            afterImg.style.clipPath = `inset(0 0 0 ${e.target.value}%)`;
+        });
+
+        const swiper = new Swiper('.testimonials', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            autoplay: {
+                delay: 4000
+            }
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const item = button.parentElement;
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        document.querySelectorAll('.fade-up, .fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
 </html>

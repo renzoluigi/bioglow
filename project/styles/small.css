@@ -1,0 +1,133 @@
+@media (min-width: 768px) {
+    .bullets-presentation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trust-seal svg,
+    .trust-seal img {
+        height: 32px;
+    }
+
+    article#development {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #development-text {
+        text-align: left;
+    }
+
+    .development-button {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .before-after-slider {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .before-after-slider input[type="range"]::-webkit-slider-thumb {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #9333ea;
+    }
+
+    .before-after-slider input[type="range"]::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #9333ea;
+    }
+
+    .slider-instruction {
+        font-size: 12px;
+        padding: 6px 10px;
+        bottom: 20px;
+    }
+
+    article#ingredients {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+    }
+
+    .ingredient-box {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+    }
+
+    article#bio-glow-unique {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        flex: 1 1 auto;
+    }
+
+    .footer-col-2 h4::after,
+    .footer-col-3 h4::after,
+    .footer-col-4 h4::after {
+        margin: 8px auto 0;
+    }
+
+    .social-icons-footer {
+        justify-content: center;
+    }
+
+    article#ingredients {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .ingredient-box {
+        flex: 1 1 100%;
+        scroll-snap-align: none;
+    }
+
+    article#bio-glow-unique {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .before-after-slider {
+        height: 220px;
+    }
+
+    .before-after-slider input[type="range"]::-webkit-slider-thumb,
+    .before-after-slider input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider-instruction {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
